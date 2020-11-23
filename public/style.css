@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "McLaren", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+/* font-family: 'Pacifico', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Kaushan Script', cursive; */
+
+body{
+    background-color: #e9e9e9;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    background-repeat: repeat;
+}
+
+
+.nav{
+    background-color: #f5ba13;
+    font-family: "McLaren", cursive;
+    font-size:1.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.nav .nav-bar{
+   color:white;
+}
+
+
+
+.items{
+     display: flex;
+    align-items: center;
+     justify-content: space-around;
+}
+
+.nav .item{
+    font-size: 1.05rem;
+    font-weight: 900;
+    margin:1rem;
+}
+
+.item a{
+color:white;
+text-decoration: none;
+}
+
+.notes-container{
+    margin-top:25px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.note{
+   position: relative;
+   width: 320px;
+   height: auto;
+   margin:1.0rem;
+   background-color: #fff;
+   border-radius:8px;
+   box-shadow: 2px 2px 5px #ccc;
+   padding:8px;
+}
+
+.note:hover{
+    box-shadow: 0 6px 8px #f5ba13;
+}
+
+.note h3{
+    font-family: 'Kaushan Script', cursive; 
+    font-size:1.6rem;
+   text-align: center;
+}
+
+.note p{
+    margin-bottom:5px;
+    font-size:1.10em;
+    padding:8px;
+    font-family: 'Patrick Hand', cursive;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.note button{
+   position: absolute;
+   border:0;
+   background-color: transparent !important;
+   right: 5px;
+   bottom: -3px;
+   color:#f5ba13;
+}
+
+input[type=text]:focus, textarea:focus{
+  box-shadow: 0px 0px 8px #f5ba13;
+}
+
+.form{
+    width:50%;
+    margin: 0px auto;
+    margin-top:3.0rem;
+    align-content: center;
+    position: relative;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius:8px;
+    background-color: white;
+}
+
+
+.form input{
+   display: block;
+   font-size: 1.2rem;
+   width:100%;
+   padding:15px;
+   border: 0;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   outline:none;
+}
+
+.form textarea{
+    display: block;
+    font-size: 1.2rem;
+    padding:15px;
+    width:100%;
+    border: 0;
+    resize: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline:none;
+}
+
+.form button{
+    position: absolute;
+    right:10px;
+    border-radius: 50%;
+    border:none;
+    padding:8px;
+    bottom:-15px;
+    color:white;
+    background-color: #f5ba13;
+    outline: none;
+}
+
+@media screen and (max-width:580px){
+    .form{
+        width:90%;
+        margin-top: 1.8rem;
+    }
+    .form button{
+        right:5px;
+    }
+}
+
+footer{
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    bottom:0;
+    width:100%;
+    height:2.5rem;
+}
+
+footer p{
+    color:rgb(143, 142, 142); 
+}
